@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Total Compensation Comparison</title>
+
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div>
+    <h1>Total Compensation Comparison</h1>
+    <div class="flex-container">
+        <div style="width: 50%">
+            <h2>Current</h2>
+            <form>
+                <label for="basicPayCurrent">Basic Pay (Monthly):</label>
+                <input type="number" id="basicPayCurrent" name="basicPayCurrent" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="allowanceCurrent">Allowances (Monthly):</label>
+                <input type="number" id="allowanceCurrent" name="allowanceCurrent" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="employerEPFCurrent">Employer EPF:</label>
+                <input type="number" id="employerEPFCurrent" name="employerEPFCurrent" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="ptoCurrent">Paid Time Off (Yearly):</label>
+                <input type="number" id="ptoCurrent" name="ptoCurrent" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="bonusesCurrent">Bonuses (Yearly):</label>
+                <input type="number" id="bonusesCurrent" name="bonusesCurrent" min=0 oninput="validity.valid||(value='');"><br>
+            </form>
+            <p id=totalCurrent></p>
+        </div>
+        <div style="width: 50%">
+            <h2>Offer</h2>
+            <form>
+                <label for="basicPayOffer">Basic Pay (Monthly):</label>
+                <input type="number" id="basicPayOffer" name="basicPayOffer" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="allowanceOffer">Allowances (Monthly):</label>
+                <input type="number" id="allowanceOffer" name="allowanceOffer" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="employerEPFOffer">Employer EPF:</label>
+                <input type="number" id="employerEPFOffer" name="employerEPFOffer" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="ptoOffer">Paid Time Off (Yearly):</label>
+                <input type="number" id="ptoOffer" name="ptoOffer" min=0 oninput="validity.valid||(value='');"><br>
+                <label for="bonusesOffer">Bonuses (Yearly):</label>
+                <input type="number" id="bonusesOffer" name="bonusesOffer" min=0 oninput="validity.valid||(value='');"><br>
+            </form>
+            <p id=totalOffer></p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
